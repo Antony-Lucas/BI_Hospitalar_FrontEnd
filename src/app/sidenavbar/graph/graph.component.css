@@ -1,0 +1,94 @@
+.body {
+  padding: 20px 30px;
+}
+
+.atendimento-filter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 13px;
+  color: #0000006d;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.atendimento-initial-cards {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.atendimento-card-info1 {
+  width: 18rem;
+  height: 13vh;
+  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: none;
+  background-color: #e5ecf6;
+  border-radius: 10px;
+}
+
+.atendimento-card-info1:nth-child(even) {
+  background-color: #e3f5ff;
+}
+
+.atendimento-card-bar {
+  width: 35rem;
+  padding: 15px;
+  padding-top: 10px;
+  box-shadow: none;
+}
+
+.atendimento-filter {
+  padding: 0px;
+  padding-left: 10px;
+}
+
+.atendimento-filter-button {
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  padding-top: 10px;
+  transition: 0.5s ease;
+}
+
+.atendimento-filter-button i:hover {
+  color: grey;
+}
+
+.atendimento-selector {
+  outline: none;
+  border: none;
+  padding-left: 0;
+}
+
+.atendimento-content-bar {
+  width: 350px;
+  margin-top: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#atendimentoDivChartBar {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+#atendimentoChartBar {
+  height: 500px;
+}

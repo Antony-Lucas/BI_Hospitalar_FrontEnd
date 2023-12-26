@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.upsidenav {
+  background-color: #ffffff;
+  box-shadow: none;
+  border-bottom: solid 1px #e5ecf6;
+  padding: 0 30px;
+}
+
+.upsidenav-search-field {
+  background-color: #e5ecf6;
+  padding: 15px;
+  width: 20rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.upsidenav-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+  height: 60px;
+}
+
+.upsidenav-search {
+  border: none;
+  padding-left: 12px;
+  width: 19rem;
+  outline: none;
+  background-color: #e5ecf6;
+}
+
+.upsidenav-wellcome-user {
+  font-size: 22px;
+  font-weight: 300;
+}
