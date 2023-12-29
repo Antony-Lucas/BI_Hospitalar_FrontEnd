@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GraphComponent } from './graph.component';
+import { DashboardmenuComponent } from './dashboardmenu.component';
 
-describe('GraphComponent', () => {
-  let component: GraphComponent;
-  let fixture: ComponentFixture<GraphComponent>;
+describe('DashboardmenuComponent', () => {
+  let component: DashboardmenuComponent;
+  let fixture: ComponentFixture<DashboardmenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GraphComponent]
+      declarations: [DashboardmenuComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(GraphComponent);
+    fixture = TestBed.createComponent(DashboardmenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

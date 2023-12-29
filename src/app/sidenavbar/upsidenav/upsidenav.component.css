@@ -36,7 +36,11 @@
   background-color: #e5ecf6;
 }
 
-.upsidenav-wellcome-user {
-  font-size: 22px;
-  font-weight: 300;
+.upsidenav-user-button {
+}
+
+.fa-user-circle:before {
+  content: "\f2bd";
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.469);
 }

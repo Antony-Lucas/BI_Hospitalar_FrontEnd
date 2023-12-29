@@ -5,7 +5,7 @@ export const navbarData = [
     label: 'Dashboard',
   },
   {
-    routeLink: 'graph',
+    routeLink: 'graphmenu',
     icon: 'fal fa-chart-bar',
     label: 'Gráficos',
   },

@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+.body {
+  padding: 20px 30px;
+  font-family: "Inter";
+}
+
+h1 {
+  font-size: 13px;
+  color: #0000006d;
+}
+
+h2 {
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.dashboard-home-container {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-back {
+  display: flex;
+}
+
+.dashboard-home-back-button {
+  background-color: transparent;
+  border: none;
+  height: 35px;
+}
+
+.dashboard-home-back-button i {
+  color: #000000a5;
+  transition: 0.5s;
+}
+
+.dashboard-home-back-button i:hover {
+  color: #00000076;
+}
+
+.dashboard-home-tab-has-no-data {
+  padding: 50px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-home-tab-add-data-button {
+  background-color: #000000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.dashboard-home-tab-add-data-button:hover {
+  background-color: #000000bc;
+}
+
+.dashboard-home-tab-add-data-button i {
+  color: #ffffff;
+}
+
+.dashboard-home-tab-add-data-button span {
+  padding: 10px;
+  color: #ffffff;
+}
+
+.modal {
+  transition: 0.5s;
+}

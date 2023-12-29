@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+.body {
+  padding: 20px 30px;
+  font-family: "Inter";
+}
+
+.dashboard-home {
+  box-shadow: none;
+}
+
+.dashboard-home-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 13px;
+  color: #0000006d;
+}

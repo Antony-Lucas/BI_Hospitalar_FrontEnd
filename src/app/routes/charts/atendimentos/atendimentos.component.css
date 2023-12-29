@@ -1,14 +1,3 @@
-.body {
-  padding: 20px 30px;
-}
-
-.atendimento-filter-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
 h1 {
   font-size: 13px;
   color: #0000006d;
@@ -21,6 +10,17 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 22px;
+}
+
+.body {
+  padding: 20px 30px;
+}
+
+.atendimento-filter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .atendimento-initial-cards {
@@ -47,7 +47,6 @@ h3 {
 
 .atendimento-card-bar {
   width: 35rem;
-  padding: 15px;
   padding-top: 10px;
   box-shadow: none;
 }
@@ -55,6 +54,25 @@ h3 {
 .atendimento-filter {
   padding: 0px;
   padding-left: 10px;
+}
+
+.atendimento-back {
+  display: flex;
+}
+
+.atendimento-back-button {
+  background-color: transparent;
+  border: none;
+  height: 35px;
+}
+
+.atendimento-back-button i {
+  color: #000000a5;
+  transition: 0.5s;
+}
+
+.atendimento-back-button i:hover {
+  color: #00000076;
 }
 
 .atendimento-filter-button {

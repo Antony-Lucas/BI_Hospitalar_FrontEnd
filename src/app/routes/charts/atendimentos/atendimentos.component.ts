@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Chart } from 'chart.js/auto';
 
 @Component({
-  selector: 'app-graph',
-  templateUrl: './graph.component.html',
-  styleUrl: './graph.component.css',
+  selector: 'app-atendimentos',
+  templateUrl: './atendimentos.component.html',
+  styleUrl: './atendimentos.component.css',
 })
-export class GraphComponent implements OnInit {
+export class AtendimentosComponent implements OnInit {
   selected = 'Esta semana';
-  constructor() {}
+  constructor(private router: Router) {}
+
+  onBackToGraphMenu() {
+    this.router.navigateByUrl('/home/graphmenu');
+  }
 
   ngOnInit(): void {
     (async function () {

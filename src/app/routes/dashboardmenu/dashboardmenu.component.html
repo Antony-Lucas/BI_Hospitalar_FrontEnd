@@ -1,0 +1,134 @@
+<div class="body">
+  <div class="dashboard-home-container">
+    <div class="dashboard-back">
+      <h1>Dashboard > Administração do sistema</h1>
+      <button
+        class="dashboard-home-back-button"
+        (click)="onBackToDashboardMenu()"
+      >
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <mat-tab-group animationDuration="500ms">
+    <mat-tab label="Usuários">
+      <div class="dashboard-home-tab-has-no-data" *ngIf="hasNoData">
+        <h2>Sem dados</h2>
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="dashboard-home-tab-add-data-button"
+        >
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          <span>Adicionar</span>
+        </button>
+      </div>
+      <div class="dashboard-home-tab" *ngIf="avaliableData">
+        <h2>Data</h2>
+      </div>
+    </mat-tab>
+    <mat-tab label="Colaboradores"> </mat-tab>
+    <mat-tab label="Configurações"> </mat-tab>
+    <mat-tab label="Emails"> </mat-tab>
+    <mat-tab label="Resumo"> </mat-tab>
+    <mat-tab [disabled]="true" label=""></mat-tab>
+    <mat-tab [disabled]="true" label=""></mat-tab>
+    <mat-tab [disabled]="true" label=""></mat-tab>
+    <mat-tab [disabled]="true" label=""></mat-tab>
+  </mat-tab-group>
+
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Adicionar usuário</h3>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <form name="form" #f="ngForm" novalidate>
+              <div class="form-group">
+                <label for="username">Nome completo</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="fullusername"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Nome de usuário</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Email</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Cargo</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  required
+                  minlength="6"
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Acesso</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button class="btn btn-primary btn-block btn-login">
+                  Salvar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

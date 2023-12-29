@@ -1,0 +1,13 @@
+<div class="body">
+  <div class="graph-menu-container">
+    <h1>Gráficos</h1>
+  </div>
+  <ul class="graph-menu-grid">
+    <li class="graph-menu-item" *ngFor="let data of menuData">
+      <a class="graph-menu-link" [routerLink]="data.routeLink">
+        <i class="graph-menu-icon" [class]="data.icon"></i>
+        <span class="graph-menu-label">{{ data.label }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

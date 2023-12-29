@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="dashboard-home-container">
+    <h1>Dashboard</h1>
+  </div>
+  <div class="dashboard-admin">
+    <ul class="graph-menu-grid">
+      <li class="graph-menu-item" *ngFor="let data of menuData">
+        <a class="graph-menu-link" [routerLink]="data.routeLink">
+          <i class="graph-menu-icon" [class]="data.icon"></i>
+          <span class="graph-menu-label">{{ data.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

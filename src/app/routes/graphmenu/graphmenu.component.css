@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+.body {
+  padding: 20px 30px;
+  font-family: "Inter";
+}
+
+.graph-menu-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 13px;
+  color: #0000006d;
+}
+
+.graph-menu-grid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+.graph-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.graph-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #e5ecf6;
+  width: 195px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.graph-menu-icon {
+  color: #000000;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.graph-menu-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+}
