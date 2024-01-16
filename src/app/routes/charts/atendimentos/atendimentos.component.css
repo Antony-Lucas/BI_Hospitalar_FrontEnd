@@ -12,6 +12,29 @@ h3 {
   font-size: 22px;
 }
 
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+ul {
+  padding: 2px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li div {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
 .body {
   padding: 20px 30px;
 }
@@ -20,35 +43,7 @@ h3 {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
-}
-
-.atendimento-initial-cards {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-}
-
-.atendimento-card-info1 {
-  width: 18rem;
-  height: 13vh;
-  padding: 15px;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  margin-bottom: 5px;
-  box-shadow: none;
-  background-color: #e5ecf6;
-  border-radius: 10px;
-}
-
-.atendimento-card-info1:nth-child(even) {
-  background-color: #e3f5ff;
-}
-
-.atendimento-card-bar {
-  width: 35rem;
-  padding-top: 10px;
-  box-shadow: none;
+  align-items: first baseline;
 }
 
 .atendimento-filter {
@@ -78,33 +73,88 @@ h3 {
 .atendimento-filter-button {
   outline: none;
   border: none;
-  background-color: #ffffff;
-  padding-top: 10px;
+  background-color: #000000;
   transition: 0.5s ease;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
-.atendimento-filter-button i:hover {
-  color: grey;
+.atendimento-filter-button i {
+  color: #ffffff;
 }
 
-.atendimento-selector {
-  outline: none;
-  border: none;
-  padding-left: 0;
+.atendimento-filter-button span {
+  padding: 8px;
+  color: #ffffff;
 }
 
-.atendimento-content-bar {
-  width: 350px;
-  margin-top: 15px;
-  padding: 5px;
+.atendimento-body {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.atendimento-initial-cards {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-#atendimentoDivChartBar {
-  display: block;
-  width: 500px;
+.atendimento-card-info1,
+.atendimento-card-info2 {
+  width: 15rem;
+  height: 110px;
+  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  background-color: #e5ecf6;
+  border-radius: 10px;
+}
+
+.atendimento-card-info2 {
+  height: 230px;
+}
+
+.atendimento-card-info1:nth-child(odd) {
+  background-color: #e3f5ff;
+}
+
+.atendimento-card-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 77vh;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.atendimento-content-bar,
+.atendimento-content-bar-full {
+  width: 98%;
+  display: flex;
+  flex-direction: Row;
+  justify-content: space-between;
+}
+
+#atendimentoDivChartBar,
+#atendimentoDivDoughnutBar,
+#atendimentoDivDoughnutBarFull {
+  display: flex;
+  justify-content: center;
+  width: 49%;
   height: 300px;
+  background-color: #f7f9fb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#atendimentoDivDoughnutBarFull {
+  width: 100%;
 }
 
 #atendimentoChartBar {

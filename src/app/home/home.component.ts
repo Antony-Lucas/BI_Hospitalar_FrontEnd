@@ -33,10 +33,8 @@ export class HomeComponent implements OnInit {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
     });
-    console.log(token, headers);
     return this.httpClient.get(url, { headers }).subscribe({
       next: (data) => {
-        console.log(data);
         this.content = data;
       },
     });

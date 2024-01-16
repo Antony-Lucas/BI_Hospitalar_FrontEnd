@@ -8,41 +8,81 @@
     </div>
     <div class="atendimento-filter">
       <button class="atendimento-filter-button">
-        Filtro <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <i class="fa fa-filter" aria-hidden="true"></i>
+        <span>Filtro</span>
       </button>
     </div>
   </div>
-  <div class="atendimento-initial-cards">
-    <mat-card class="atendimento-card-info1">
-      <div class="atendimento-top-bar">
-        <h2>Total de Atendimentos</h2>
-        <h3>2.135</h3>
+  <div class="atendimento-body">
+    <div class="atendimento-body-cards1">
+      <div class="atendimento-initial-cards">
+        <mat-card class="atendimento-card-info1">
+          <div class="atendimento-top-bar">
+            <h2>Total de Atendimentos</h2>
+            <h3>2.135</h3>
+          </div>
+        </mat-card>
+        <mat-card class="atendimento-card-info1">
+          <div class="atendimento-top-bar">
+            <h2>Atendimentos este mês</h2>
+            <h3>498</h3>
+          </div>
+        </mat-card>
+        <mat-card class="atendimento-card-info1">
+          <div class="atendimento-top-bar">
+            <h2>Atendimentos esta semana</h2>
+            <h3>95</h3>
+          </div>
+        </mat-card>
       </div>
-    </mat-card>
-    <mat-card class="atendimento-card-info1">
-      <div class="atendimento-top-bar">
-        <h2>Atendimentos este mês</h2>
-        <h3>498</h3>
+      <div class="atendimento-body-cards2">
+        <mat-card class="atendimento-card-info2">
+          <div class="atendimento-top-bar">
+            <h2>Principais Convênios</h2>
+            <ul>
+              <li>
+                <div>
+                  <h4>UNIMED</h4>
+                  <h5>145</h5>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Geap</h4>
+                  <h5>120</h5>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>Particular</h4>
+                  <h5>112</h5>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4>FUSEX</h4>
+                  <h5>9517</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </mat-card>
       </div>
-    </mat-card>
-    <mat-card class="atendimento-card-info1">
-      <div class="atendimento-top-bar">
-        <h2>Atendimentos esta semana</h2>
-        <h3>95</h3>
+    </div>
+    <div class="atendimento-card-bar">
+      <div class="atendimento-content-bar">
+        <div id="atendimentoDivChartBar">
+          <canvas id="atendimentoChartBar"></canvas>
+        </div>
+        <div id="atendimentoDivDoughnutBar">
+          <canvas id="atendimentoChartDoughnut"></canvas>
+        </div>
       </div>
-    </mat-card>
-    <mat-card class="atendimento-card-info1">
-      <div class="atendimento-top-bar">
-        <h2>Total de Atendimentos(QT)</h2>
-        <h3>2.135</h3>
+      <div class="atendimento-content-bar-full">
+        <div id="atendimentoDivDoughnutBarFull">
+          <canvas id="atendimentoChartBarFull"></canvas>
+        </div>
       </div>
-    </mat-card>
+    </div>
   </div>
-  <mat-card class="atendimento-card-bar">
-    <mat-card-content class="atendimento-content-bar">
-      <div id="atendimentoDivChartBar">
-        <canvas id="atendimentoChartBar"></canvas>
-      </div>
-    </mat-card-content>
-  </mat-card>
 </div>

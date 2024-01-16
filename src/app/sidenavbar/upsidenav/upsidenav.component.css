@@ -6,7 +6,8 @@
   background-color: #ffffff;
   box-shadow: none;
   border-bottom: solid 1px #e5ecf6;
-  padding: 0 30px;
+  padding: 0 27px;
+  width: 100%;
 }
 
 .upsidenav-search-field {
