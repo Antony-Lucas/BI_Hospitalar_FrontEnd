@@ -9,6 +9,7 @@ import {
   WS_API,
 } from '../_environments/environments';
 import { TokenStorageService } from './token-storage.service';
+import { stringify } from 'node:querystring';
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +27,7 @@ export class WebsocketService {
     private http: HttpClient,
     private storageService: TokenStorageService
   ) {
-    this.streamData();
+    this.streamData('2023-12-01T00:00:01', '2024-01-30T23:59:59');
   }
 
   client: any;
@@ -60,12 +61,22 @@ export class WebsocketService {
     });
   }
 
-  streamData() {
+  streamData(startDate: string, endDate: string) {
     const ws = new SockJS(this.streamUrl);
     this.client = Stomp.over(ws);
     let that = this;
+
     this.client.connect({}, (frame: any) => {
-      that.client.subscribe('/topic1', (message: any) => {
+      console.log('WebSocket connected:', frame);
+      that.client.send(
+        '/app/stream',
+        {},
+        JSON.stringify({
+          startData: startDate,
+          endData: endDate,
+        })
+      );
+      that.client.subscribe('/topic/atendimentos', (message: any) => {
         if (message.body) {
           that.streamMessage = message.body;
           that.dataStore.data = JSON.parse(that.streamMessage);

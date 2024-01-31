@@ -57,13 +57,19 @@
         </div>
         <div class="modal-body">
           <div>
-            <form name="form" #f="ngForm" novalidate>
+            <form
+              name="form"
+              #f="ngForm"
+              (ngSubmit)="f.form.valid && onSubmit()"
+              novalidate
+            >
               <div class="form-group">
-                <label for="username">Nome completo</label>
+                <label for="fullusername">Nome completo</label>
                 <input
                   class="form-control"
                   type="text"
                   name="fullusername"
+                  [(ngModel)]="form.fullUserName"
                   required
                 />
               </div>
@@ -73,6 +79,7 @@
                   class="form-control"
                   type="text"
                   name="username"
+                  [(ngModel)]="form.userName"
                   required
                 />
               </div>
@@ -81,7 +88,8 @@
                 <input
                   class="form-control"
                   type="text"
-                  name="username"
+                  name="email"
+                  [(ngModel)]="form.email"
                   required
                 />
               </div>
@@ -90,7 +98,8 @@
                 <input
                   class="form-control"
                   type="text"
-                  name="username"
+                  name="cargo"
+                  [(ngModel)]="form.cargo"
                   required
                 />
               </div>
@@ -100,6 +109,7 @@
                   type="password"
                   class="form-control"
                   name="password"
+                  [(ngModel)]="form.passWord"
                   required
                   minlength="6"
                 />
@@ -109,7 +119,8 @@
                 <input
                   class="form-control"
                   type="text"
-                  name="username"
+                  name="role"
+                  [(ngModel)]="form.role"
                   required
                 />
               </div>
