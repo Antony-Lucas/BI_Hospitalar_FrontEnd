@@ -27,7 +27,7 @@ export class WebsocketService {
     private http: HttpClient,
     private storageService: TokenStorageService
   ) {
-    this.streamData('2023-12-01T00:00:01', '2024-01-30T23:59:59');
+    this.streamData('2023-10-01T00:00:01', '2024-02-15T23:59:59');
   }
 
   client: any;
@@ -69,14 +69,14 @@ export class WebsocketService {
     this.client.connect({}, (frame: any) => {
       console.log('WebSocket connected:', frame);
       that.client.send(
-        '/app/stream',
+        '/app/stream/titulopagar',
         {},
         JSON.stringify({
           startData: startDate,
           endData: endDate,
         })
       );
-      that.client.subscribe('/topic/atendimentos', (message: any) => {
+      that.client.subscribe('/topic/titulopagar', (message: any) => {
         if (message.body) {
           that.streamMessage = message.body;
           that.dataStore.data = JSON.parse(that.streamMessage);
